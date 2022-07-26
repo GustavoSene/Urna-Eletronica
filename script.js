@@ -176,9 +176,26 @@ setTimeout(restart,3000); }
 
 function result() {
 
+ let total = "";
+
+if (votos.Jair>votos.Lula && votos.Jair>votos.Ciro && votos.Jair>votos.Daciolo && votos.Jair>votos.Nulo) {
+  total = "Jair Bolsonaro"
+} else if (votos.Lula>votos.Jair && votos.Lula>votos.Ciro && votos.Lula>votos.Daciolo && votos.Lula>votos.Nulo) {
+  total = "Luiz Inácio"
+} else if (votos.Ciro>votos.Jair && votos.Ciro>votos.Lula && votos.Ciro>votos.Daciolo && votos.Ciro>votos.Nulo) {
+  total = "Ciro Gomes"
+} else if (votos.Daciolo>votos.Jair && votos.Daciolo>votos.Ciro && votos.Daciolo>votos.Lula && votos.Daciolo>votos.Nulo) {
+  total = "Cabo Daciolo"
+} else if (votos.Nulo>votos.Jair && votos.Nulo>votos.Ciro && votos.Nulo>votos.Daciolo && votos.Nulo>votos.Lula) {
+  total = "Nulo, nenhum candidato foi escolhido"
+}
+
+
+
+
 alert("                                      Contagem de votos \n\r" + 
 "Jair Bolsonaro: " + votos.Jair + "\r\n" + "Luiz Inácio: " + votos.Lula + "\r\n" + "Ciro Gomes: " 
-+ votos.Ciro + "\r\n" + "Cabo Daciolo: " + votos.Daciolo + "\r\n" + "Votos nulos: " + votos.Nulo + "\r\n" + "o novo presidente é: " );
++ votos.Ciro + "\r\n" + "Cabo Daciolo: " + votos.Daciolo + "\r\n" + "Votos nulos: " + votos.Nulo + "\r\n" + "o vencedor foi: " + total );
 
 }
 
