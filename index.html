@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="candidatosContainer">
+
+       <ul>
+            <li>Jair Bolsonaro: 1234 </li>
+            <li>Luiz Inácio: 8547</li>
+            <li>Ciro Gomes: 9798</li>
+            <li>Cabo Daciolo: 5761</li>
+
+       </ul>
+
+
+    </div>
+
+
+    <div id="container">
+
+       <div id="screen">
+
+
+        <div id="telaFinal">
+
+        <h1 id="textoFinal">SEU VOTO FOI COMPUTADO</h1>
+
+
+        </div>
+
+        
+            <div id="tela2">
+                <p id="votoTexto">Voto para Presidente</p>
+                <h2 id="numeroT">Número </h2>
+                <button class="numerosTela" id="emptyNumber1"></button>
+                <button class="numerosTela"id="emptyNumber2"></button>
+                <button class="numerosTela"id="emptyNumber3"></button>
+                <button class="numerosTela"id="emptyNumber4"></button>
+                <h2 id="nomeT">Nome</h2>
+                <div id="emptyName"></div>
+                <h2 id="partidoT">Partido</h2>
+                <div id="partido"></div>
+                <div id="foto"></div>
+            </div>
+    
+
+
+       </div>
+       
+       
+       <div id="board">
+
+        <button class="numbers" onclick="numeros(1)">1</button>
+        <button  onclick="numeros(2)" class="numbers" >2</button>
+        <button  onclick="numeros(3)" class="numbers">3</button>
+        <button  onclick="numeros(4)"class="numbers">4</button>
+        <button  onclick="numeros(5)"class="numbers">5</button>
+        <button  onclick="numeros(6)"class="numbers">6</button>
+        <button  onclick="numeros(7)"class="numbers">7</button>
+        <button  onclick="numeros(8)"class="numbers">8</button>
+        <button  onclick="numeros(9)"class="numbers">9</button>
+        
+        <button class="numbers" onclick="numeros(0)" id="zero">0</button>
+
+    
+        <button  id="branco" onclick="branco()">BRANCO</button>
+        <button  id="corrigir" onclick="correção()">CORRIGIR</button>
+        <button  id="confirmar" onclick="votar()">CONFIRMAR</button>
+
+
+
+    </div>
+
+
+    </div>
+
+    <button onclick="result()" id="result">Resultado</button>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
